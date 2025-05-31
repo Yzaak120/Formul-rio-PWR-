@@ -1,111 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-	<meta charset="utf-8">
-	<!-- Esse metadado serve para dizer ao navegador que o site está configurado em padrão     latino </!-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Página 2 </title>
-	<link rel="stylesheet" type="text/css" href="Estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página 2 - Formulário</title>
+    <link rel="stylesheet" type="text/css" href="Estilo.css">
 </head>
 <body>
-<header id="cabecalho">
+    <header id="cabecalho">
+		<h3> Link para o site principal:</h3>
+        <a href="index.html">Home</a>
+         
+    </header>
 
+    <h3 id="titulo">Formulário de cadastro</h3>
 
+    <form id="meuformulario">
+        <label for="foto">Foto</label>
+        <input type="image" name="foto" alt="submit" src="perfil.jpg" width="32" height="32">
+        <!-- o atributo for="" serve para oficializar o vínculo entre a label e o name -->
+        <input type="file" name="arquivo">
+        <br><br>
 
+        <!-- Aqui serve para dizer que é um formulário -->
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Insira aqui o seu nome">
 
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" placeholder="Insira seu sobrenome">
 
-	<a href="index.html"> Home </a>
-<br>
-<!-- A tag "br" serve para dar uma quebra de linha </!-->
-</header>
+        <label for="dt_nascimento">Data de nascimento:</label>
+        <input type="date" name="dt_nascimento">
+        <!-- Aqui o input seria "date" e não seria necessário o "placeholder" -->
 
+        <label for="CPF">CPF:</label>
+        <input type="text" name="CPF" placeholder="000.000.000-00">
 
-<h3 id="titulo"> Formulário de cadastro </h3>
-<br>
-<form id="meuformulario"> 
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" placeholder="seuemail@exemplo.com">
+        <br><br>
 
-	<label for="foto"> Foto </label>
-<input type="image" name="foto" alt="submit"
-src="perfil.jpg" width="32px"height="32px">
-<!-- o atributo for="" serve para oficializar o vínculo entre a label e o name </!-->
+        <h4>Tecnologias conhecidas</h4>
+        <input type="checkbox" name="html" id="html" checked>
+        <label for="html">HTML</label>
+        <br>
+        <input type="checkbox" name="css" id="css">
+        <label for="css">CSS</label>
+        <br>
+        <input type="checkbox" name="csharp" id="csharp">
+        <label for="csharp">C#</label>
+        <br>
+        <input type="checkbox" name="javascript" id="javascript">
+        <label for="javascript">Javascript</label>
+        <br>
+        <input type="checkbox" name="ruby" id="ruby">
+        <label for="ruby">Ruby</label>
+        <br><br>
 
-<input type="file" name="arquivo">
-<br>
+        <h4>Tempo de experiência</h4>
+        <input type="radio" name="tempoexp" id="tempoexp01">
+        <label for="tempoexp01">Menos de 1 ano</label>
+        <br>
+        <input type="radio" name="tempoexp" id="tempoexp02">
+        <label for="tempoexp02">Entre 1 e 2 anos</label>
+        <br>
+        <input type="radio" name="tempoexp" id="tempoexp03">
+        <label for="tempoexp03">Entre 3 e 7 anos</label>
+        <br>
+        <input type="radio" name="tempoexp" id="tempoexp04">
+        <label for="tempoexp04">Mais de 7 anos</label>
+        <br><br>
 
+        <h4>Qual a área de experiência</h4>
+        <input type="radio" name="areaxp" id="areaxp01">
+        <label for="areaxp01">Backend</label>
+        <br>
+        <input type="radio" name="areaxp" id="areaxp02">
+        <label for="areaxp02">Front-end</label>
+        <br>
+        <input type="radio" name="areaxp" id="areaxp03">
+        <label for="areaxp03">Dev-ops</label>
+        <br>
+        <input type="radio" name="areaxp" id="areaxp04">
+        <label for="areaxp04">Fullstack</label>
+        <br><br>
 
-	<!-- Aqui serve para dizer que é um formulário</!-->
-<label for="nome"> Nome: </label>
-<input type="text" name=" nome " placeholder="Insira aqui o seu nome">
-
-<label for="sobrenome"> Sobrenome: </label>
-<input type="text" name=" sobrenome " placeholder="Insira seu sobrenome">
-
-<label for=" dt_nascimento"> Data de nacimento: </label>
-<input type="date" name="dt_nacimento">
-<!-- Aqui o input seria "date" e não seria necessário o "placeholder"</!-->
-
-<label for="CPF"> CPF:</label>
-<input type="password" name="CPF"> 
- 
- <label> E-mail </label>
-<input type="email" name="email">
-<br>
-<h4> Tecnologias conhecidas <h4>
-	 <input type="checkbox" name="opcao1" checked="true">
-	<label for="opcao1"> HTML </label>
-<br>
-	<input type="checkbox" name="opcao2">
-	<label for="opcao2"> CSS </label>
-<br>
-	<input type="checkbox" name="opcao3">
-	<label for="opcao3"> C# </label>
-<br>
-	<input type="checkbox" name="opcao3">
-	<label for="opcao3"> Javascript </label>
-<br>
-	<input type="checkbox" name="opcao3">
-	<label for="opcao3"> Ruby </label>
-	<br>
-
-	<label for=" tempoexp01"> Menos de 1 ano </label>
-	<input type="radio" name="tempoexp" id="tempoexp01">
-<br>
-
-	<label for=" tempoexp02"> Entre 1 e 2 anos  </label>
-	<input type="radio" name="tempoexp" id="tempoexp02">
-<br>
-	<label for=" tempoexp03"> Entre 3 e 7 anos </label>
-	<input type="radio" name="tempoexp" id="tempoexp03">
-<br>
-
-	<label for=" tempoexp04"> Mais de 7 anos </label>
-	<input type="radio" name="tempoexp" id="tempoexp04">
- 
- <br>
- <h4> Qual a área de experiência </h4>
-
-<label for=" areaxp01"> Backend </label>
-	<input type="radio" name="areaxp" id="areaxp01">
-<br>
-
-	<label for=" areaxp02"> Front-end  </label>
-	<input type="radio" name="areaxp" id="areaxp02">
-<br>
-	<label for=" areapx03"> Dev-ops	 </label>
-	<input type="radio" name="areaxp" id="areapx03">
-<br>
-
-	<label for=" areaxp04"> Fullstack</label>
-	<input type="radio" name="areaxp" id="areaxp04">
-	<br>
-	<input type='submit' name="submeter" value="Enviar">
-	<input type="submit" name="resetar" value="	apagar ">
- 
-</form>
- 
-	
+        <input type="submit" name="submeter" value="Enviar">
+        <input type="reset" name="resetar" value="Apagar">
+    </form>
 </body>
-
-</html>			
-
-
+</html>

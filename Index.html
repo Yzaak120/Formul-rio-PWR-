@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Home - Videos</title>
-		<link rel="stylesheet" href="Estilo.css">
-	</head>
-	<body>
-		<header id="cabecalho">
-			<a href="Formulario.html" class="link">FORMULÁRIO</a>
-			<br>
-		</header>
-		
-		
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Página  1</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <header id="cabecalho">
+	<h3> 	Link para a outra página (Formulário): </h3>
+        <a href="Formulário.html" class="link">FORMULÁRIO</a>
+    </header>
+ <!-- Header é o cabeçalho da página-->
+    <main >
 
-		<iframe width="640" height="480" src="https://www.youtube.com/embed/UYDOYVrICG0?si=ST_N6F1sWpwpfq7m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="video01"></iframe>
+        <h1 id="Videos" >Meus Vídeos</h1>
+        <figure>   
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A2hk9jtL7WA?si=e-oPujHYAX6UYNEq&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	<figcaption>  Aqui é o vídeo utilizando a tag<strong> iframe </strong> - Embutida do youtube - </figcaption>
+        
 
-		<video width="480px" height="360px" controls id="video" id="video02">
-			<source src="IBM1401.mp4" type="video/mp4">
-		</video>
+	<video width="480" height="360" controls id="video02">
+            <source src="Fallen down.mp4" type="video/mp4">
+			<!-- Essa tag é criada diretamente do arquivo html, onde o vídeo e baixado, então inserido no arquivo--> </video>   
+			 <figcaption> Aqui é o vídeo utilizando a tag <strong>   video </strong></figcaption>
+	 </figure>
+     
+     
+    </main>
 
-		
-
-		<footer id="rodape">
-			<p id="textorodape">FEITO POR: PAULO EDUARDO S. MONTIER</p>
-			<img src="instalogo.png" id="logo">
-		</footer>
-
-	</body>
+    <footer id="rodape">
+        <p id="textorodape">Feito por Yzaak Vieira</p>
+        <img src="instalogo.png" alt="Logo Instagram" id="logo">
+    </footer>
+</body>
 </html>
